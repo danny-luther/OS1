@@ -68,7 +68,7 @@ int main() {
                       << " at index " << shm->count << std::endl;
             ++shm->count;
         } else {
-            std::cerr << "Producer: unexpected buffer overflow!" << std::endl;
+            std::cerr << "Producer: buffer overflow" << std::endl;
         }
 
         // signal
