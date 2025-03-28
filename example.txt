@@ -1,0 +1,30 @@
+Input:
+g++ -std=c++17 -o producer producer.cpp -lpthread
+g++ -std=c++17 -o consumer consumer.cpp -lpthread
+./producer & ./consumer &
+
+Output:
+potential for bugs, hit enter to progress. try again if fails
+
+Producer: produced 1 at index 1
+Consumer: consumed 1 from index 1
+Consumer: consumed 0 from index 0
+Producer: produced 2 at index 0
+Consumer: consumed 2 from index 0
+Producer: produced 3 at index 0
+Consumer: consumed 3 from index 0
+Producer: produced 4 at index 0
+Consumer: consumed 4 from index 0
+Producer: produced 5 at index 0
+Consumer: consumed 5 from index 0
+Producer: produced 6 at index 0
+Consumer: consumed 6 from index 0
+Producer: produced 7 at index 0
+Producer: produced 8 at index 1
+Consumer: consumed 8 from index 1
+Consumer: consumed 7 from index 0
+Producer: produced 9 at index 0
+Consumer: consumed 9 from index 0
+
+[138]-  Done                    ./producer
+[139]+  Done                    ./consumer
