@@ -16,7 +16,8 @@ $ gcc producer.c -pthread -lrt -o producer
 $ gcc consumer.c -pthread -lrt -o consumer
 $ ./producer & ./consumer &
 
-# **Overview**: this project demonstrates the producer consumer problem by using shared memory and semaphores in C++.  the producer creates items and places them into a buffer array of size 2.  the consumer will pick these items up after they are inside the array.  using syncronization logic the producer waits if the buffer is full and the consumer waits if the buffer is empty.  this is an example of mutual exclusion.
+# **Overview**:
+this project demonstrates the producer consumer problem by using shared memory and semaphores in C++.  the producer creates items and places them into a buffer array of size 2.  the consumer will pick these items up after they are inside the array.  using syncronization logic the producer waits if the buffer is full and the consumer waits if the buffer is empty.  this is an example of mutual exclusion.
 
 # **Requirements**:
 Linux distro Ubuntu
