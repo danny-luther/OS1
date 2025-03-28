@@ -21,11 +21,14 @@ this project demonstrates the producer consumer problem by using shared memory a
 
 # **Requirements**:
 Linux distro Ubuntu
+
 C++ compiler
+ 
 POSIX semaphore and sharememory C++ library
 
 # **Compilation**:
 g++ -std=c++17 -o producer producer.cpp -lpthread
+
 g++ -std=c++17 -o consumer consumer.cpp -lpthread
 
 # **Execution**:
