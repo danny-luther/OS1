@@ -16,21 +16,21 @@ $ gcc producer.c -pthread -lrt -o producer
 $ gcc consumer.c -pthread -lrt -o consumer
 $ ./producer & ./consumer &
 
-#**Overview**: this project demonstrates the producer consumer problem by using shared memory and semaphores in C++.  the producer creates items and places them into a buffer array of size 2.  the consumer will pick these items up after they are inside the array.  using syncronization logic the producer waits if the buffer is full and the consumer waits if the buffer is empty.  this is an example of mutual exclusion.
+# **Overview**: this project demonstrates the producer consumer problem by using shared memory and semaphores in C++.  the producer creates items and places them into a buffer array of size 2.  the consumer will pick these items up after they are inside the array.  using syncronization logic the producer waits if the buffer is full and the consumer waits if the buffer is empty.  this is an example of mutual exclusion.
 
-#**Requirements**:
+# **Requirements**:
 Linux distro Ubuntu
 C++ compiler
 POSIX semaphore and sharememory C++ library
 
-#**Compilation**:
+# **Compilation**:
 g++ -std=c++17 -o producer producer.cpp -lpthread
 g++ -std=c++17 -o consumer consumer.cpp -lpthread
 
-#**Execution**:
+# **Execution**:
 ./producer & ./consumer &
 
-#**Troubleshooting**:
+# **Troubleshooting**:
 the code has some potential for bugs.  it tends to work just fine but the producer and consumer can both fail when shm_open file exists/does not exist.
 if a bug is experienced, press enter to finish the process.  then try again running the execution command:
 
